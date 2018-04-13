@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function compact(array) {
+      let resIndex = 0
+      const result = []
+
+      if (array == null) {
+        return result
+      }
+
+      for (const value of array) {
+        if (value) {
+          result[resIndex++] = value
+        }
+      }
+      return result
+    }
+
+    console.log(['', 0, undefined, null, 1, 2, true, 'sss', ' ', NaN])
+    console.log(compact(['', 0, undefined, null, 1, 2, true, 'sss', ' ', NaN]))
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let box = [1, 2, 3, 4, 5];
+    box.slice(1, 1);
+    console.log(box)
+    console.log(box.slice(1, 5))
+    /**
+     *   原生slice(start, end)   返回切割后数组，不改变原数组
+     *   start 起始位置下标
+     *   end 结束位置下标
+     */
+  </script>
+  <script src="../slice.js">
+  </script>
+  <script>
+    let arr = [1, 2, 3, 4, 5];
+    // slice(arr, 1, 2);
+    console.log(arr)
+    console.log(slice(arr, 1, 5))
+  </script>
+</body>
+</html>
